@@ -1,32 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felicidades, mi doctora Valentina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+      <circle cx='32' cy='32' r='30' fill='%230fb9b1'/>
+      <path d='M20 30 L28 38 L44 22' stroke='white' stroke-width='4' fill='none' stroke-linecap='round'/>
+    </svg>">
 </head>
 <body>
-    <div class="container flex">
-        <div class="facebook-page flex ">
-            <div class="text">
-                <h1>Facebook</h1>
-                <p>Connect with friends and the world</p>
-                <p>around  you on facebook</p>
+    <div class="background-gradient"></div>
+
+    <header class="hero" id="inicio">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🖤</span>
+                <span class="logo-text">Mi Doctora Valentina</span>
             </div>
-            <form action="#">
-                <input type="email" placeholder="Email or phone number" required>
-                <input type="password" placeholder="Password" required>
-                <div class="link">
-                    <button type="submit" class="login">Login</button>
-                    <a href="#" class="forgot">Forgot password</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Tu historia</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#mensaje">Mensaje</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-badge">Nuevo logro desbloqueado 🩺</p>
+                <h1>
+                    ¡Felicidades por tu grado,
+                    <span class="highlight">mi doctora Valentina</span>!
+                </h1>
+                <p class="hero-subtitle">
+                    Hoy celebramos tu esfuerzo, tu corazón gigante y todas las vidas
+                    que vas a tocar como auxiliar de enfermería. Este logro es solo
+                    el comienzo de todo lo increíble que viene para ti.
+                </p>
+                <div class="hero-actions">
+                    <a href="#mensaje" class="btn primary-btn">Leer mi mensaje para ti</a>
+                    <a href="#galeria" class="btn ghost-btn">Ver tus fotos</a>
                 </div>
-            </form>
+                <div class="hero-tags">
+                    <span class="chip">Auxiliar de enfermería</span>
+                    <span class="chip">Mi orgullo</span>
+                    <span class="chip">Mi doctora favorita</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card hero-card-main">
+                    <div class="hero-photo-circle">
+                        <!-- Reemplaza esta imagen por una foto bonita de Valentina -->
+                        <img src="img/valentina1.jpg" alt="Valentina con su uniforme de salud" />
+                    </div>
+                    <h2>Valentina</h2>
+                    <p>Auxiliar de enfermería graduada</p>
+                    <div class="hero-status">
+                        <span class="status-dot"></span>
+                        <span>Lista para cuidar al mundo</span>
+                    </div>
+                </div>
+
+                <div class="hero-card hero-card-floating hero-card-top">
+                    <span class="hero-icon">🩺</span>
+                    <p>Corazón que cuida, manos que sanan.</p>
+                </div>
+
+                <div class="hero-card hero-card-floating hero-card-bottom">
+                    <span class="hero-icon">🎓</span>
+                    <p>Logro alcanzado: GRADUADA</p>
+                </div>
+            </div>
         </div>
-        <hr>
-        <div class="button">
-            <a href="#">Create new account</a>
-        </div>
+    </header>
+
+    <main>
+        <!-- Sección historia / línea de tiempo -->
+        <section id="historia" class="section timeline-section reveal">
+            <div class="section-header">
+                <h2>Tu camino hasta aquí</h2>
+                <p>
+                    Cada desvelo, cada práctica, cada examen y cada paciente te
+                    trajeron hasta este momento. No fue fácil, pero lo hiciste
+                    con el corazón.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-card">
+                    <div class="timeline-icon">✨</div>
+                    <h3>El inicio de tu vocación</h3>
+                    <p>
+                        Un día decidiste que querías cuidar la salud de los demás,
+                        y desde ahí no has dejado de luchar por ese sueño.
+                    </p>
+                </article>
+
+                <article class="timeline-card">
+                    <div class="timeline-icon">📚</div>
+                    <h3>Noches de estudio</h3>
+                    <p>
+                        Horas y horas estudiando anatomía, medicamentos, cuidados,
+                        protocolos y todo lo necesario para dar siempre lo mejor.
+                    </p>
+                </article>
+
+                <article class="timeline-card">
+                    <div class="timeline-icon">🤍</div>
+                    <h3>Aprendiendo a cuidar</h3>
+                    <p>
+                        No solo aprendiste técnicas, también a acompañar con
+                        cariño, paciencia y empatía a quienes más lo necesitan.
+                    </p>
+                </article>
+
+                <article class="timeline-card">
+                    <div class="timeline-icon">🎓</div>
+                    <h3>El gran día</h3>
+                    <p>
+                        Hoy te pones la toga, recibes tu título y ves cómo todo
+                        el esfuerzo se convierte en orgullo, alegría y futuro.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección galería -->
+        <section id="galeria" class="section gallery-section reveal">
+            <div class="section-header">
+                <h2>Galería de momentos</h2>
+                <p>
+                    Aquí van esos momentos donde tu sonrisa y tu corazón
+                    de doctora se roban toda la atención. 
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Reemplaza las rutas de las imágenes por las tuyas -->
+                <figure class="photo-card" data-caption="Mi doctora favorita, lista para conquistar el mundo.">
+                    <img src="img/valentina4.jpg" alt="Valentina sonriendo" loading="lazy" />
+                    <figcaption>Mi doctora favorita 🖤</figcaption>
+                </figure>
+
+                <figure class="photo-card" data-caption="Tu mirada de orgullo lo dice todo.">
+                    <img src="img/valentina3.jpg" alt="Valentina con su diploma" loading="lazy" />
+                    <figcaption>Orgullosa de su logro 🎓</figcaption>
+                </figure>
+
+                <figure class="photo-card" data-caption="Cada paso que diste te trajo hasta aquí.">
+                    <img src="img/valentina2.jpg" alt="Valentina con uniforme" loading="lazy" />
+                    <figcaption>Uniforme, corazón y vocación 🩺</figcaption>
+                </figure>
+
+                <figure class="photo-card" data-caption="Gracias por cuidar, sanar y estar para los demás.">
+                    <img src="img/valentina5.jpg" alt="Valentina en un día especial" loading="lazy" />
+                    <figcaption>Mi orgullo de cada día 💫</figcaption>
+                </figure>
+            </div>
+
+            <!-- Modal para ver fotos grandes -->
+            <div class="lightbox" id="lightbox">
+                <div class="lightbox-content">
+                    <button class="lightbox-close" id="lightboxClose">×</button>
+                    <img id="lightboxImage" src="" alt="Foto de Valentina" />
+                    <p id="lightboxCaption"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección mensaje principal -->
+        <section id="mensaje" class="section message-section reveal">
+            <div class="section-header">
+                <h2>Mi mensaje para ti</h2>
+                <p>
+                    Esto es lo que siente mi corazón al verte graduada, mi
+                    doctora hermosa.
+                </p>
+            </div>
+
+            <div class="message-card">
+                <p class="message-text">
+                    Hermosa mia, hoy no solo te gradúas como auxiliar de enfermería,
+                    hoy demuestras que cuando pones el corazón en algo, no hay
+                    meta que se te resista. Me llena de orgullo ver todo lo que
+                    has logrado: cada clase, cada práctica, cada turno y cada
+                    pequeño paso que te trajo hasta aquí.
+                </p>
+                <p class="message-text">
+                    Admiro la forma en la que cuidas a los demás, cómo escuchas,
+                    cómo acompañas, cómo estás presente con una sonrisa incluso
+                    en los momentos difíciles. Esa combinación de inteligencia,
+                    sensibilidad y fuerza que tienes es lo que te hace única,
+                    y por eso para mí siempre serás <strong>mi doctora favorita</strong>.
+                </p>
+                <p class="message-text">
+                    Este grado es solo el inicio de una historia llena de logros,
+                    batas blancas, pacientes agradecidos y sueños cumplidos.
+                    Yo voy a estar a tu lado para aplaudirte en cada victoria,
+                    para apoyarte en cada reto y para recordarte siempre lo
+                    increíble que eres. Hoy brillas tú, y yo soy el más feliz
+                    de verte brillar. Te quiero mucho, mi doctora🖤.
+                </p>
+
+                <div class="message-footer">
+                    <span class="signature">Con todo mi amor,</span>
+                    <span class="signature-name">tu novio, que te admira infinito </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección pequeña de detalles -->
+        <section class="section stats-section reveal">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">⏳</span>
+                    <h3>Años de esfuerzo</h3>
+                    <p>Cada día valió la pena para llegar a este momento.</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🤲</span>
+                    <h3>Corazón gigante</h3>
+                    <p>Tu manera de cuidar a los demás es tu superpoder.</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🌟</span>
+                    <h3>Futuro brillante</h3>
+                    <p>Lo que viene ahora será aún más grande y hermoso.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Página hecha con mucho amor solo para ti,
+            <span class="highlight">mi doctora Valentina🖤</span>.
+        </p>
+    </footer>
+
+    <!-- Elementos decorativos flotantes -->
+    <div class="floating-badge">
+        🩺 Auxiliar de enfermería graduada
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
